@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*This website was designed from mobile to desktop with an initial measurement of 476px*/
+
+
+/*This is the grid for the page ''index, nosotros''*/
+.containerIndex {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 150px 80px auto 150px;
+    grid-template-columns: auto;
+    grid-template-areas: 'header'
+                         'nav'
+                         'main'
+                         'footer';
+}
+
+.mainTittle {
+    grid-area: header;
+}
+
+.navBar {
+    grid-area: nav;
+}
+
+.mainContent {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+/*This is the design for the header (applies to all pages)*/
+
+.mainTittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTittle h1 {
+    font-family: Waterfall;
+    font-size: 45px;
+}
+
+.mainTittle h2 {
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.mainTittle img {
+    width: 40px;
+}
+
+
+/*This is the design for the navigation bar (applies to all pages)*/
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 8px;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navBar ul li {
+    padding: 10px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(190, 78, 78);
+}
+
+.shopImg img {
+    height: 20px;
+}
+
+.logoNav img {
+    height: 30px;
+}
+
+
+/*This is the design for the footer (applies to all pages)*/
+footer{
+    background-color: #eab4e979;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer h5{
+    font-family: Waterfall;
+    font-size: 18px;
+}
+
+footer p{
+    font-family: Montserrat;
+    font-size: 10px;
+}
+
+.paymentLogo{
+    height: 25px;
+}
+
+.socialMedia{
+    margin-left: 20px;
+}
+
+.socialMedia a{
+    font-size: 10px;
+}
+
+.socialMedia a img{
+    width: 20px;
+}
+
+
+/*This is the design for the page ''index''*/
+.setCakes img {
+    width: 100%;
+}
+
+.infoBox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    font-family: Montserrat;
+}
+
+.delivery h3 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.delivery p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.delivery img {
+    width: 15%;
+}
+
+.shopOnline {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    font-family: Montserrat;
+}
+
+.shopOnline h3 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.shopOnline p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.shopOnline img {
+    width: 10%;
+}
+
+
+/*This is the design for the page ''nosotros''*/
+
+.greetingImg{
+    font-family: Montserrat;
+    background-image: url(../img/backgroundAu.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greetingImg h2{
+    font-size: 20px;
+}
+
+.greetingImg p{
+    font-size: 15px;
+    font-weight: bolder;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bioOwner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: Montserrat;
+}
+
+.bioOwner h4{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.bioOwner p{
+    font-size: 15px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.bioOwner img{
+    width: 50%;
+}
+
+
+/*This is the design for the page ''nuestras delicias''*/
+.ourProducts{
+    font-family: Montserrat;
+    background-image: url(../img/backgroundOp.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourProducts h2{
+    font-size: 20px;
+}
+
+.cakesDes{
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cakesDes h3{
+    color: #F8B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cakesDes p{
+    font-weight: bold;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.cakesDes img{
+    width: 100%;
+}
+
+.allCakes{
+    margin: 35px;
+}
+
+.btn{
+    background-color: white;
+    padding: 5px 12px;
+    border: 1px solid;
+    border-color: grey;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    color: #F8B;
+}
+
+
+/*This is the design for the page ''encuentranos''*/
+.findUs{
+    font-family: Montserrat;
+    background-image: url(../img/backgroundFu2.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.findUs h2{
+    font-size: 20px;
+}
+
+.findUs p{
+    font-size: 15px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.basicInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-family: Montserrat;
+    align-items: center;
+}
+
+.basicInfo h3{
+    padding-top: 20px;
+    color: #F8B;
+}
+
+.basicInfo p{
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.map{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+/*This is the design for the page ''contacto''*/
+.contactUs{
+    font-family: Montserrat;
+    background-image: url(../img/backgroundContact.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactUs h2{
+    font-size: 20px;
+}
+
+.textInfo{
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+}
+
+.textInfo p{
+    text-align: justify;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.forCostumer{
+    padding: 20px 20px 60px 20px;
+}
+
+.forCostumer input, .forCostumer textarea{
+    display: block;
+    width: 100%;
+    font-family: Montserrat;
+    font-weight: bolder;
+    margin-top: 10px;
+    border: 1px solid gray;
+}
+
+.forCostumer input{
+    height: 40px;
+}
+
+.btnForm{
+    background-color: white;
+    color: #E9398F;
+}
+
+/*MEDIA QUERY*/
+
+@media(min-width:576px){
+    .navBar{
+        font-size: 14px;
+    }
+
+    .footer h5{
+        font-size: 20px;
+    }
+
+    .footer p{
+        font-size: 12px;
+    }
+
+}
+@media(min-width:768px) {
+    .containerIndex{
+        grid-template-rows: 200px 80px auto 80px;
+    }
+
+    .mainTittle h1 {
+        font-size: 50px;
+    }
+
+    .mainTittle h2 {
+        font-size: 15px;
+    }
+
+    .navBar {
+        font-size: 18px;
+    }
+
+    .shopImg img {
+        height: 25px;
+    }
+
+    .logoNav img {
+        height: 35px;
+    }
+
+    .footer h5 {
+        font-size: 25px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+        /*Features for index*/
+    .infoBox {
+        flex-wrap: nowrap;
+        padding-top: 30px;
+        padding-left: 70px;
+    }
+
+    .delivery h3 {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .delivery p {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    .delivery img {
+        width: 14%;
+    }
+
+    .shopOnline h3 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .shopOnline p {
+        font-size: 16px;
+        padding-top: 14px;
+    }
+
+    .shopOnline img {
+        width: 10%;
+        padding-top: 6px;
+    }
+
+        /*Features for ''nosotros*/
+    .bioOwner{
+        width: 250px;
+    }
+
+    .biosOwners{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+        /*Features for ''nuestras delicias''*/
+    .cakesDes{
+        width:300px;
+    }
+    
+    .allCakes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+        /*Features for ''encuentranos''*/
+    .contactInfo{
+        display: flex;
+        padding-bottom: 50px;
+    }
+    
+    .basicInfo{
+        width: 200px;
+        margin: 20px;
+        align-items: initial;
+    }
+
+    .basicInfo p{
+        text-align: justify;
+    }
+
+    .map{
+        padding-top: 50px;
+    }
+
+        /*Features for ''contacto''*/
+    .textInfo{
+        width: 300px;
+    }
+
+    .completeForm{
+        display: flex;
+        justify-content: space-evenly
+    }
+
+}
+
+@media(min-width: 992px) {
+    .containerIndex{
+        grid-template-rows: 250px 80px auto 80px;
+    }
+
+    .mainTittle h1{
+        font-size: 60px;
+    }
+
+    .mainTittle img{
+        width: 60px;
+    }
+
+    .navBar{
+        font-size: 20px;
+    }
+
+    .navBar ul li{
+        padding: 30px;
+    }
+    
+    .logoNav{
+        width: 45px;
+    }
+    
+    .footer p{
+        font-size: 15px;
+    }
+
+        /*Features for index*/
+    .infoBox{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .delivery h3{
+        font-size: 25px;
+    }
+
+    .delivery p{
+        font-size: 20px;
+    }
+
+    .shopOnline h3{
+        font-size: 25px;
+    }
+
+    .shopOnline p{
+        font-size: 20px;
+    }
+
+    .paymentLogo{
+        height: 50px;
+    }
+
+    .socialMedia a{
+        font-size: 15px;
+    }
+          
+        /*Features for ''nosotros*/
+    .greetingImg{
+        height: 300px;
+    }
+
+    .greetingImg h2{
+        font-size: 30px;
+    }
+
+    .greetingImg p{
+        font-size: 20px;
+    }
+
+    .bioOwner h4{
+        font-size: 20px;
+    }
+
+    .bioOwner p{
+        font-size: 18px;
+    }
+
+    .bioOwner img{
+        width: 100%;
+    }
+
+    .biosOwners{
+        flex-wrap: nowrap;
+    }
+
+        /*Features for ''nuestras delicias''*/
+    .ourProducts{
+        height: 300px;
+    }
+
+    .ourProducts h2{
+        font-size: 30px;
+    }
+
+    .cakesDes{
+        width: 250px;
+    }
+
+        /*Features for ''encuentranos''*/
+    .findUs{
+        height: 300px;
+        background-size: cover;
+    }
+    
+    .findUs h2{
+        font-size: 30px;
+    }
+
+    .findUs p{
+        font-size: 20px;
+    }
+
+    .basicInfo{
+        width: 300px;
+        margin: 50px;
+    }
+
+    .contactInfo{
+        justify-content: space-around;
+    }
+
+    
+        /*Features for ''contacto''*/
+    .contactUs{
+        height: 300px;
+    }
+
+    .contactUs h2{
+        font-size: 30px;
+    }
+
+    .textInfo{
+        width: 400px;
+    }
+
+    .forCostumer{
+        width: 500px;
+    }
+
+}
